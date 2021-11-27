@@ -34,4 +34,5 @@ jobs:
           YD_APP_PWD: ${{ secrets.YD_APP_PWD }}
           TRUECAPTCHA_USERID: ${{ secrets.TRUECAPTCHA_USERID }}
           TRUECAPTCHA_APIKEY: ${{ secrets.TRUECAPTCHA_APIKEY }}
+          MAILPARSER_DOWNLOAD_URL_ID: ${{ secrets.MAILPARSER_DOWNLOAD_URL_ID }}
         run: python eu.py
