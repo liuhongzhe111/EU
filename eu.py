@@ -69,14 +69,14 @@ MAILPARSER_DOWNLOAD_URL_ID = os.environ["MAILPARSER_DOWNLOAD_URL_ID"]
 MAILPARSER_DOWNLOAD_BASE_URL = "https://files.mailparser.io/d/"
 
 # Telegram Bot Push https://core.telegram.org/bots/api#authorizing-your-bot
-TG_BOT_TOKEN = ""  # 通过 @BotFather 申请获得，示例：1077xxx4424:AAFjv0FcqxxxxxxgEMGfi22B4yh15R5uw
-TG_USER_ID = ""  # 用户、群组或频道 ID，示例：129xxx206
+TG_BOT_TOKEN = os.environ["TG_BOT_TOKEN"]  # 通过 @BotFather 申请获得，示例：1077xxx4424:AAFjv0FcqxxxxxxgEMGfi22B4yh15R5uw
+TG_USER_ID = os.environ["TG_USER_ID"]  # 用户、群组或频道 ID，示例：129xxx206
 TG_API_HOST = "https://api.telegram.org"  # 自建 API 反代地址，供网络环境无法访问时使用，网络正常则保持默认
 
 # Email notification
-RECEIVER_EMAIL = os.environ.get("RECEIVER_EMAIL", "")
-YD_EMAIL = os.environ.get("YD_EMAIL", "")
-YD_APP_PWD = os.environ.get("YD_APP_PWD", "")  # yandex mail 使用第三方 APP 授权码
+RECEIVER_EMAIL = os.environ["RECEIVER_EMAIL"]
+YD_EMAIL = os.environ["YD_EMAIL"]
+YD_APP_PWD = os.environ["YD_APP_PWD"]  # yandex mail 使用第三方 APP 授权码
 
 # Magic internet access
 PROXIES = {"http": "http://127.0.0.1:10808", "https": "http://127.0.0.1:10808"}
