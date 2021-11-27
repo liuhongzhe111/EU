@@ -28,5 +28,10 @@ jobs:
           USERNAME: ${{ secrets.USERNAME }}
           PASSWORD: ${{ secrets.PASSWORD }}
           TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
-          TG_USER_ID: ${{ secrets.TG_USER_ID }}    
+          TG_USER_ID: ${{ secrets.TG_USER_ID }}
+          RECEIVER_EMAIL: ${{ secrets.RECEIVER_EMAIL }}
+          YD_EMAIL: ${{ secrets.YD_EMAIL }}
+          YD_APP_PWD: ${{ secrets.YD_APP_PWD }}
+          TRUECAPTCHA_USERID: ${{ secrets.TRUECAPTCHA_USERID }}
+          TRUECAPTCHA_APIKEY: ${{ secrets.TRUECAPTCHA_APIKEY }}
         run: python eu.py
